@@ -19,10 +19,13 @@ GTDB-tk Database
 -Used by MAGinator to assign taxonomic classifications
 
 # Preprocessing Before MAGinator
-- install conda
+- Install Conda
   
           #in the powershell
-          wget "https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe" -outfile "./Downloads/Anaconda3-2024.10-1-Windows-x86_64.exe"
+          wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+          bash ~/Miniconda3-latest-Linux-x86_64.sh
+          conda create -n maginator -c bioconda -c conda-forge snakemake mamba
+          conda activate maginator
           pip install maginator
   
 - download and unzip GTDB-tk database release 214 (MAGINATOR_database) took about 72 hours
