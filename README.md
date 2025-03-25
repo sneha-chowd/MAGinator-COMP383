@@ -1,7 +1,7 @@
 # MAGinator-COMP383
 COMP 383 MAGinator Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
 
-# Dependencies, Packages, Programming Languages Used
+# Dependencies, Packages, and Programming Languages Used
 Python
 
 R
@@ -18,7 +18,7 @@ GTDB-tk Database
 
 -Used by MAGinator to assign taxonomic classifications
 
-# Preprocessing Before MAGinator
+# Preprocessing Before Running MAGinator
 - Install Conda
   
           #in the powershell
@@ -28,8 +28,8 @@ GTDB-tk Database
           conda activate maginator
           pip install maginator
   
-- download and unzip GTDB-tk database release 214 (MAGINATOR_database) took about 72 hours
+- Download and Unzip GTDB-tk Database Release 214 (MAGINATOR_database). This took about 72 hours.
   
           wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.1/auxillary_files/gtdbtk_r214_data.tar.gz tar xvzf *.tar.gz
   
-- we downloaded test data, would want user to download test data as well (clarify later)
+- Download data (will be amended later when we have our data from Dr. Putonti)
