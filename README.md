@@ -41,3 +41,6 @@ GTDB-tk Database
 2. On the reads.csv file (required input for the tool, provided in the tool's test data) change the paths to the extracted fastq file
 3. Unzip the contigs.fasta.gz file in the test_data directory
 4. First Command Tried to Run Test Data: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_two```
+   * Issue: Ran for 5 days and appeared to have been caught up, job terminated
+  
+5. Second Command Tried to Run Test Dta: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_out3 --max_cores 5 --max_mem 50 ```
