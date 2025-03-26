@@ -35,8 +35,8 @@ GTDB-tk Database
   
 - Download data (will be amended later when we have our data from Dr. Putonti)
 
-  # Running the test data
-  1. Test data were retrieved from 3 samples at SRA: https://www.ncbi.nlm.nih.gov/sra?LinkName=bioproject_sra_all&from_uid=715601 with IDs dfc99c_A, f9d84e_A and 221641_A.
-     This was done using wget, fasterq-dump
-  2. On the reads.csv file (required input for the tool, provided in the tool's test data) change the paths to the extracted fastq file
-  3. First Command Tried to Run Test Data: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_two```
+# Running the test data
+1. Test data were retrieved from 3 samples at SRA: https://www.ncbi.nlm.nih.gov/sra?LinkName=bioproject_sra_all&from_uid=715601 with IDs dfc99c_A, f9d84e_A and 221641_A.
+   This was done using wget, fasterq-dump
+2. On the reads.csv file (required input for the tool, provided in the tool's test data) change the paths to the extracted fastq file
+3. First Command Tried to Run Test Data: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_two```
