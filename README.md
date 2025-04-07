@@ -18,8 +18,8 @@ GTDB-tk Database
 
 -Used by MAGinator to assign taxonomic classifications
 
-# Preprocessing Before Running MAGinator
-- Install Miniconda
+# Before Running MAGinator
+- Install Miniconda (snakemake and mamba are included with this) 
 
           #in the terminal
           wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -33,7 +33,20 @@ GTDB-tk Database
           wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.1/auxillary_files/gtdbtk_r214_data.tar.gz
           tar xvzf *.tar.gz
   
-- Download data (will be amended later when we have our data from Dr. Putonti)
+- git clone the MAGinator GitHub repo
+  
+          git clone https://github.com/Russel88/MAGinator.git
+
+- Check if MAGinator and conda were properly installed
+
+          maginator -h
+
+- Activate MAGinator
+
+          conda activate maginator
+- Your command line should look like this, waiting for your next command:
+
+          (maginator) YourUsername@newton:~$
 
 # Running the test data
 1. Test data were retrieved from 3 samples at SRA: https://www.ncbi.nlm.nih.gov/sra?LinkName=bioproject_sra_all&from_uid=715601 with IDs dfc99c_A, f9d84e_A and 221641_A.
