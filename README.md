@@ -55,5 +55,7 @@ GTDB-tk Database
 3. Unzip the contigs.fasta.gz file in the test_data directory
 4. First Command Tried to Run Test Data: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_two```
    * Issue: Ran for 5 days and appeared to have been caught up, job terminated
-  
 5. Second Command Tried to Run Test Dta: ```maginator --vamb_clusters clusters.tsv --reads reads.csv --contigs contigs.fasta --gtdb_db /home/project2/MAGINATOR_database/release214/ --output test_out3 --max_cores 5 --max_mem 50 ```
+
+# Test Run Failure & Incompatible Server Type
+The MAGinator github (https://github.com/Russel88/MAGinator?tab=readme-ov-file) states that "MAGinator can run on compute clusters using qsub (torque), sbatch (slurm), or drmaa structures." After letting the test data run for over two weeks with no success, we've come to the conclusion that "can run" actually means "must run" and that this tool is uncompatible with non-cluster servers. 
