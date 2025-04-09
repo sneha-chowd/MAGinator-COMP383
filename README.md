@@ -36,14 +36,14 @@ GTDB-tk Database
 - git clone the MAGinator GitHub repo
   
           git clone https://github.com/Russel88/MAGinator.git
+  - Activate MAGinator
+
+          conda activate maginator
 
 - Check if MAGinator and conda were properly installed
 
           maginator -h
 
-- Activate MAGinator
-
-          conda activate maginator
 - Your command line should look like this, waiting for your next command:
 
           (maginator) YourUsername@newton:~$
