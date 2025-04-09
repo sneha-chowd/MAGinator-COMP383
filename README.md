@@ -59,4 +59,4 @@ GTDB-tk Database (found on the MAGinator github)
    * Specified the number of cores and amount of memory allocated to the job to see if that would progress the job further
 
 ## Test Run Failure & Incompatible Server Type
-The MAGinator github (https://github.com/Russel88/MAGinator?tab=readme-ov-file) states that "MAGinator can run on compute clusters using qsub (torque), sbatch (slurm), or drmaa structures." After letting the test data run for over two weeks with no success, we've come to the conclusion that "can run" actually means "must run" and that this tool is uncompatible with non-cluster servers. 
+The MAGinator github (https://github.com/Russel88/MAGinator?tab=readme-ov-file) states that "MAGinator can run on compute clusters using qsub (torque), sbatch (slurm), or drmaa structures." After letting the test data run for over two weeks with no success, we've come to the conclusion that "can run" actually means "must run" and that this tool is incompatible with non-cluster servers. 
