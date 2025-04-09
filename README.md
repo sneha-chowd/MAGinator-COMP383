@@ -15,10 +15,8 @@ Snakemake
 MAGinator
 
 GTDB-tk Database
-
--Genome Taxonomy Database
-
--Used by MAGinator to assign taxonomic classifications
+- Genome Taxonomy Database
+- Used by MAGinator to assign taxonomic classifications
 
 ## Before Running MAGinator
 - Install Miniconda (snakemake and mamba are included with this) 
