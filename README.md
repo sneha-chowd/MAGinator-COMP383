@@ -1,6 +1,8 @@
 # MAGinator-COMP383
 COMP 383 MAGinator Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
 
+MAGinator Github (https://github.com/Russel88/MAGinator?tab=readme-ov-file)
+
 ## Dependencies, Packages, and Programming Languages Used
 Python
 
@@ -14,7 +16,7 @@ MAGinator
 
 GTDB-tk Database
 
--Genone Taxonomy Database
+-Genome Taxonomy Database
 
 -Used by MAGinator to assign taxonomic classifications
 
