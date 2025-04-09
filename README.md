@@ -26,7 +26,7 @@ GTDB-tk Database (found on the MAGinator github)
           bash ~/Miniconda3-latest-Linux-x86_64.sh
           #after creating the conda environment the terminal needs to be reloaded
           conda create -n maginator -c bioconda -c conda-forge snakemake mamba
-          #everytime the terminal is reloaded maginator needs to be reactivates
+          #everytime the terminal is reloaded maginator needs to be reactivated
           conda activate maginator
           pip install maginator
   
