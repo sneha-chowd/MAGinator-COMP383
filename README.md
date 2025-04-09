@@ -14,7 +14,7 @@ Snakemake
 
 MAGinator
 
-GTDB-tk Database
+GTDB-tk Database (found on the MAGinator github)
 - Genome Taxonomy Database
 - Used by MAGinator to assign taxonomic classifications
 
