@@ -62,4 +62,6 @@ GTDB-tk Database (found on the MAGinator github)
 The MAGinator github (https://github.com/Russel88/MAGinator?tab=readme-ov-file) states that "MAGinator can run on compute clusters using qsub (torque), sbatch (slurm), or drmaa structures." After letting the test data run for over two weeks with no success, we've come to the conclusion that "can run" actually means "must run" and that this tool is incompatible with non-cluster servers. 
 
 ## Pivoting to StrainPhlAn
+Due to usabiltiy issues with MAGinator and recurring errors, we've decided to try the computation tool StainPhlAn instead. 
+Breifly, StrianPhlan works by reconstructing consensus sequence variants within species-specific marker genes and using them to estimate strain-level phylogenies.
 
