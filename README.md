@@ -1,5 +1,5 @@
-# MAGinator-COMP383
-COMP 383 MAGinator Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
+# MAGinator/StrainPhlan-COMP383
+COMP 383 MAGinator/StrainPhlAn Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
 
 MAGinator Github (https://github.com/Russel88/MAGinator?tab=readme-ov-file)
 
@@ -60,3 +60,6 @@ GTDB-tk Database (found on the MAGinator github)
 
 ## Test Run Failure & Incompatible Server Type
 The MAGinator github (https://github.com/Russel88/MAGinator?tab=readme-ov-file) states that "MAGinator can run on compute clusters using qsub (torque), sbatch (slurm), or drmaa structures." After letting the test data run for over two weeks with no success, we've come to the conclusion that "can run" actually means "must run" and that this tool is incompatible with non-cluster servers. 
+
+## Pivoting to StrainPhlAn
+
