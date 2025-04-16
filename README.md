@@ -1,7 +1,5 @@
-# MAGinator/StrainPhlan-COMP383
-COMP 383 MAGinator/StrainPhlAn Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
-
-MAGinator Github (https://github.com/Russel88/MAGinator?tab=readme-ov-file)
+# StrainPhlan-COMP383
+COMP 383 StrainPhlAn Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
 
 MetaPhlAn Github (https://github.com/biobakery/MetaPhlAn)
 
