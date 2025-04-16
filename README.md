@@ -2,6 +2,7 @@
 COMP 383 MAGinator/StrainPhlAn Project by Jay Pothuganti, Maryum Ahmad, Megan Martinez, Sneha Chowdhury
 
 MAGinator Github (https://github.com/Russel88/MAGinator?tab=readme-ov-file)
+MetaPhlAn Github (https://github.com/biobakery/MetaPhlAn)
 
 ## Dependencies, Packages, and Programming Languages Used
 Python
