@@ -76,3 +76,5 @@ Breifly, StrianPhlan works by reconstructing consensus sequence variants within 
           pip install metaphlan
           #Downloading the library
           metaphlan --install --index mpa_vJan21_CHOCOPhlAnSGB_202103 --bowtie2db <database folder>
+
+## StrainPhlAn Output
