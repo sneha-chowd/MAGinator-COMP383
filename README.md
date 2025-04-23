@@ -6,7 +6,7 @@ MetaPhlAn Github (https://github.com/biobakery/MetaPhlAn)
 
 ## Pivoting to StrainPhlAn
 Due to usabiltiy issues with MAGinator and recurring errors, we've decided to try the computation tool StainPhlAn instead. 
-Breifly, StrianPhlan works by reconstructing consensus sequence variants within species-specific marker genes and using them to estimate strain-level phylogenies.
+Breifly, StrianPhlan works by reconstructing consensus sequence variants within species-specific marker genes and using them to estimate strain-level phylogenies. Although StrainPhlAn's functionality is a bit different from MAGinator's it will still be beneficial to get some output.
 
 ## Downloading MetaPhlAn (StrainPhlAn uses the output from MetaPhlAn)
           #Installing MetaPhlAn
