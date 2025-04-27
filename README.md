@@ -60,7 +60,7 @@ mkdir -p db_markers
 extract_markers.py -c t__SGB10068 -o db_markers/ #SGB10068 is the id for _E. coli_ in the MetaPhlAn database
 ```
 
-Finally, a reference genome can optionally be included so that the StrainPhlAn run will filter the selected clade markers based on their presence in the reference-genome. For this analysis the _E.coli_ K-12 reference genome was used and can be downloaded via NCBI Datasets using
+Finally, a reference genome can optionally be included so that the StrainPhlAn run will filter the selected clade markers based on their presence in the reference-genome. For this analysis the _E.coli_ K-12 reference genome was used and can be downloaded via NCBI Datasets using the following command, but it is also included in the sample_data folder.
 ```
 datasets download genome accession GCF_000005845.2
 ```
