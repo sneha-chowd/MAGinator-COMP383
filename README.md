@@ -32,9 +32,13 @@ metaphlan --install --index mpa_vJan21_CHOCOPhlAnSGB_202103 --bowtie2db <databas
 
 
 ## Data
-To test StrainPhlAn's strain-level identification, two urobiome metagenomic samples (8380 and 8330) each with 3 identified strains of _E. coli_ via Floria (https://github.com/bluenote-1577/floria) were used to determine StrainPhlAn's success. Due to StrainPhlAn's filtering requirements, at least 3 samples are required to successfully run and have identified strains. Therefore, two more samples were added, one identified with 1 strain of _E. coli_ (8517) and one with 3 strains (8525). These samples can be retrieved from the sample_data folder. 
+To test StrainPhlAn's strain-level identification, the StrainPhlAn tutorial provides example data and associated, required StrainPhlAn output files of 6 Human Metagenome Project (HMP) gut metagenomic samples (SRS055982-subjectID_638754422, SRS022137-subjectID_638754422, SRS019161-subjectID_763496533, SRS013951-subjectID_763496533, SRS014613-subjectID_763840445, SRS064276-subjectID_763840445): http://cmprod1.cibio.unitn.it/biobakery4/github_strainphlan4/. 
+
+StrainPhlAn can be run using the files within this directory, however the samples2markers.py step must be redone to create the correct consensus markers output in .json format (the .pkl format included in their provided db_markers directory will not work). 
 
 ## Running StrainPhlAn
+Here is a generalized walk-through on how to run StrainPhlAn with the goal of identifying _E. coli_ strains in provided samples. 
+
 Since multiple directories will be made an accessed in order to run StrainPhlAn, we reccomend to make a directory to house all the required files within the MetaPhlAn repository clone:
 ```
 mkdir strainphlan_run
@@ -59,8 +63,13 @@ For this analysis, we needed to extract markers of _E. coli_ from MetaPhlAn data
 mkdir -p db_markers
 extract_markers.py -c t__SGB10068 -o db_markers/ #SGB10068 is the id for _E. coli_ in the MetaPhlAn database
 ```
+To determine the ID for the bacterial species of interest in the MetaPhlAn database, use:
+```
+less /path/to/database | grep <genus>_<species>
+```
+The line in the database that includes this genus and species will start with an ID number that will would replace the 'SGB10068' in the previous code block. 
 
-Finally, a reference genome can optionally be included so that the StrainPhlAn run will filter the selected clade markers based on their presence in the reference-genome. For this analysis the _E.coli_ K-12 reference genome was used and can be downloaded via NCBI Datasets using the following command, but it is also included in the sample_data folder.
+Finally, a reference genome can optionally be included so that the StrainPhlAn run will filter the selected clade markers based on their presence in the reference-genome. For this analysis the _E.coli_ K-12 reference genome was used and can be downloaded via NCBI Datasets using the following command.
 ```
 datasets download genome accession GCF_000005845.2
 ```
@@ -71,9 +80,9 @@ strainphlan -s consensus_markers/*.json* -m db_markers/t__SGB10068.fna -r /path/
 ```
 
 ## Output
-For the purposes of our analysis, the most helpful output files are:
+For the purposes of our analysis, the most helpful output files to determine strain relationships are:
 * RAxML_bestTree.t__SGB10068.StrainPhlAn4.tre - a Newick formatted Phylogenetic Tree of phylogenetic relationships between the dominant _E. coli_ strain identified in each sample
   * iTOL (https://itol.embl.de/) was used to visualize the Phylogenetic Tree 
 * t__SGB10068.polymorphic - statistics on the polymorphic site
 
-All expected output is included in the output folder. 
+All expected output for the analysis of our is included in the output folder. 
