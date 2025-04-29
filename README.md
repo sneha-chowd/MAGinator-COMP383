@@ -7,6 +7,19 @@ MetaPhlAn Github (https://github.com/biobakery/MetaPhlAn)
 Due to usabiltiy issues with MAGinator and recurring errors, we've decided to try the computational tool StainPhlAn instead. 
 Breifly, StrianPhlan works by reconstructing consensus sequence variants within species-specific marker genes and using them to estimate strain-level phylogenies. Although StrainPhlAn's functionality is a bit different from MAGinator's it will still be beneficial to get some output.
 
+## Software Requirements
+* Python 3 or higher (https://www.python.org/)
+
+## Packages for StrainPhlAn
+These packages are required to run StrainPhlAn, but are set up using conda when downloading the tool.
+* NumPy (https://numpy.org/)
+* Biopython (https://biopython.org/wiki/Documentation)
+* BowTie2 v2.3 or higher (https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+
+## Additional Package for Analysis
+This is not downloaded via conda and requires a separate download. 
+* NCBI Datasets (https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
+
 ## Downloading MetaPhlAn
 StrainPhlAn is a tool within the MetaPhlAn toolkit, requiring MetaPhlAn output. Therefore, MetaPhlAn installation is required before StrainPhlAn can be used. MetaPhlAn is installed using conda. To download conda:
 
@@ -24,7 +37,7 @@ conda create --name mpa -c bioconda python=3.7 metaphlan
 conda activate mpa
 ```
 
-MetaPhlAn uses a database that includes clade markers for its analysis. For ease of use, it is reccommended to deactivate the mpa environment when downloading the library. Additionally, we would further reccomend git cloning the MetaPhlAn repository and putting the database in their metaphlan_database folder, as doing so circumvents PATH issues with the database and errors of it unecessarily realoading. To download prior to running to the tool:
+MetaPhlAn uses a database that includes clade markers for its analysis. For ease of use, it is reccommended to deactivate the mpa environment when downloading the library. Additionally, we would further reccommend git cloning the MetaPhlAn repository and putting the database in their metaphlan_database folder, as doing so circumvents PATH issues with the database and errors of it unecessarily realoading. To download prior to running to the tool:
 ```
 #Downloading the database
 metaphlan --install --index mpa_vJan21_CHOCOPhlAnSGB_202103 --bowtie2db <database folder>
@@ -63,7 +76,7 @@ For this analysis, we needed to extract markers of _E. coli_ from MetaPhlAn data
 mkdir -p db_markers
 extract_markers.py -c t__SGB10068 -o db_markers/ #SGB10068 is the id for _E. coli_ in the MetaPhlAn database
 ```
-To determine the ID for the bacterial species of interest in the MetaPhlAn database, use:
+To determine the ID for any bacterial species of interest in the MetaPhlAn database, use:
 ```
 less /path/to/database | grep <genus>_<species>
 ```
