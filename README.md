@@ -98,4 +98,4 @@ For the purposes of our analysis, the most helpful output files to determine str
   * iTOL (https://itol.embl.de/) was used to visualize the Phylogenetic Tree 
 * t__SGB10068.polymorphic - statistics on the polymorphic site
 
-All expected output for the analysis of our is included in the output folder. 
+All expected output for the analysis we performed of is included in the output folder. 
