@@ -45,7 +45,7 @@ metaphlan --install --index mpa_vJan21_CHOCOPhlAnSGB_202103 --bowtie2db <databas
 
 
 ## Data
-To test StrainPhlAn's strain-level identification, the StrainPhlAn tutorial provides example data and associated, required StrainPhlAn output files of 6 Human Metagenome Project (HMP) gut metagenomic samples (SRS055982-subjectID_638754422, SRS022137-subjectID_638754422, SRS019161-subjectID_763496533, SRS013951-subjectID_763496533, SRS014613-subjectID_763840445, SRS064276-subjectID_763840445): http://cmprod1.cibio.unitn.it/biobakery4/github_strainphlan4/. 
+To test StrainPhlAn's strain-level identification, the StrainPhlAn tutorial provides example data and intermediate, required StrainPhlAn input files for 6 Human Metagenome Project (HMP) gut metagenomic samples (SRS055982-subjectID_638754422, SRS022137-subjectID_638754422, SRS019161-subjectID_763496533, SRS013951-subjectID_763496533, SRS014613-subjectID_763840445, SRS064276-subjectID_763840445): http://cmprod1.cibio.unitn.it/biobakery4/github_strainphlan4/. 
 
 StrainPhlAn can be run using the samples and intermediate files within this directory, however the samples2markers.py step must be redone to create the correct consensus markers output in .json format (the .pkl format included in their provided db_markers directory will not work). 
 
